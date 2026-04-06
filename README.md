@@ -301,13 +301,4 @@ Socket.IO's built-in rooms make the proximity chat architecture trivial — each
 
 ---
 
-## Deployment Notes
-
-- Deploy the server to any Node.js host (Railway, Render, Fly.io, EC2).
-- Set `CLIENT_URL` to your production frontend URL to allow CORS.
-- Set `VITE_SERVER_URL` to your production server URL before building the client.
-- Use MongoDB Atlas for a managed cloud database.
-- For horizontal scaling, replace the in-memory `users` Map with Redis and use `socket.io-redis` adapter so proximity checks work across multiple server instances.
-
----
 
